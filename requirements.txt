@@ -1,0 +1,2 @@
+seaborn
+matplotlib==3.3.4  # 互換性のあるバージョンを指定
