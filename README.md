@@ -1,31 +1,31 @@
 # gilotとは？
-https://github.com/hirokidaichi/gilot
+https://github.com/hirokidaichi/gilot  
 こちら確認してください。  
 https://qiita.com/hirokidaichi/items/ceece347f808cc9d14dd  
 制作者様のQiitaも一緒にどうぞ。 　
 
 # 概要
-Dockerコンテナ内でgilotが動作する様にインストールしてみる
+Dockerコンテナ内でgilotが動作する様にインストールしてみる。
+BuildしたDockerImageを利用して、ローカルにあるgit repoを解析します。  
 
 # 利用方法
 Makefileで最低限のコマンドを用意しているため利用してください。
 
 ## build
-Docker imageをBuildします。 　
+Docker imageをBuildします。  
 引数等は無いためそのまま実行してください。
 
 ## plot
-Plot結果を.png形式で出力します。
-REPO_PATHに、解析を行いたいGitRepositoryのパスを指定してください。
+Plot結果を.png形式で出力します。  
+`REPO_PATH`に、解析を行いたいGitRepositoryのパスを指定してください。
 ```
 make REPO_PATH="/解析対象のディレクトリパス" plot
 ```
-実行後、plot.pngが現在のディレクトリに出力されます。
+実行後、plot.pngが現在のディレクトリに出力されます。  
 
 ## hotgraph
-HotGraphを.png形式で出力します。
-こちらも同様に
-REPO_PATHに、解析を行いたいGitRepositoryのパスを指定してください。
+HotGraphを.png形式で出力します。  
+こちらも同様に、`REPO_PATH`に、解析を行いたいGitRepositoryのパスを指定してください。  
 ```
 make REPO_PATH="/解析対象のディレクトリパス" hotgraph
 ```
